@@ -1,3 +1,25 @@
+# Everything is crawlable. Explicit Allow rules for AI/search crawlers below
+# (the wildcard already permits them; these make access explicit).
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 User-agent: *
 Allow: /
+
 Sitemap: https://gaza1000.bixet.tech/sitemap.xml
