@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Thmanyah typeface — @font-face definitions
+   --------------------------------------------------------------------------
+   Three families, 5 weights each (Light 300, Regular 400, Medium 500,
+   Bold 700, Black 900). No italics. Each .woff2 already contains both Arabic
+   and Latin glyphs, so no `unicode-range` splitting is needed.
+
+   Paths assume the `fonts/` folder sits next to this CSS file. If you serve
+   the fonts from a different location, do a find/replace on `./fonts/`.
+
+   LICENSE: proprietary (thmanyah). Bundle these files into your own compiled
+   app, served same-origin. Do NOT serve them from a shared/public font
+   endpoint. See README.md / LICENSE-NOTE.md.
+   ========================================================================== */
+
+/* ---------- Thmanyah Sans ---------- */
+@font-face {
+  font-family: "Thmanyah Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/thmanyahsans-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/thmanyahsans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/thmanyahsans-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/thmanyahsans-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./fonts/thmanyahsans-Black.woff2") format("woff2");
+}
+
+/* ---------- Thmanyah Serif Display ---------- */
+@font-face {
+  font-family: "Thmanyah Serif Display";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/thmanyahserifdisplay-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/thmanyahserifdisplay-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Serif Display";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/thmanyahserifdisplay-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Serif Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/thmanyahserifdisplay-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Serif Display";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./fonts/thmanyahserifdisplay-Black.woff2") format("woff2");
+}
+
+/* ---------- Thmanyah Serif Text ---------- */
+@font-face {
+  font-family: "Thmanyah Serif Text";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/thmanyahseriftext-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/thmanyahseriftext-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Serif Text";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/thmanyahseriftext-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Serif Text";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/thmanyahseriftext-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Thmanyah Serif Text";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./fonts/thmanyahseriftext-Black.woff2") format("woff2");
+}
+
+/* ---------- Optional convenience custom properties ----------
+   Use via: font-family: var(--font-thmanyah-sans);
+   The fallback stack keeps Arabic + Latin readable before the web font loads. */
+:root {
+  --font-thmanyah-sans: "Thmanyah Sans", system-ui, "Segoe UI", Tahoma, Arial, sans-serif;
+  --font-thmanyah-serif-display: "Thmanyah Serif Display", Georgia, "Times New Roman", serif;
+  --font-thmanyah-serif-text: "Thmanyah Serif Text", Georgia, "Times New Roman", serif;
+}
